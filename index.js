@@ -2,6 +2,7 @@ const express = require('express')
 const fs = require('fs')
 const app = express();
 var bodyParser=require("body-parser");
+const port=3000;
 
 
 app.use(function (req, res, next) {
@@ -167,6 +168,6 @@ app.delete('/posts/delete/:id',(req,res)=>{
 })
 
 
-app.listen(3000,()=>console.log("Server Started on 3000..."))
+app.listen(process.env.PORT || port)
 
 

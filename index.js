@@ -168,6 +168,8 @@ app.delete('/posts/delete/:id',(req,res)=>{
 })
 
 
-app.listen(process.env.PORT || port)
+/*app.listen(process.env.PORT || port)*/
+
+app.listen(port)
 
 
